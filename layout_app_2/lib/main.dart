@@ -28,29 +28,43 @@ class MyApp extends StatelessWidget {
         ),
 
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              color: Colors.amber,
-              height: 100,
+              color: Colors.lightGreenAccent,
+              height: 300,
               width: double.infinity,
               child: Column(
                 children: [
-                  Text('data'),
+                  Text(
+                    'Flutter is an OpenSource',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
+                  ),
                   Text('data'),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(color: Colors.green, height: 50, width: 100),
-                      Container(color: Colors.green, height: 50, width: 100),
+                      Container(
+                        color: Colors.deepPurpleAccent,
+                        height: 50,
+                        width: 100,
+                      ),
+                      Container(
+                        color: Colors.deepPurpleAccent,
+                        height: 50,
+                        width: 100,
+                      ),
                     ],
                   ),
                 ],
               ),
             ),
+
+            SizedBox(height: 10),
+
             Container(
               color: Colors.amber,
-              height: 100,
+              height: 300,
               width: double.infinity,
               child: Column(
                 children: [
@@ -61,27 +75,38 @@ class MyApp extends StatelessWidget {
                   Text('data'),
                   Column(
                     children: [
-                      Container(color: Colors.green, height: 50, width: 300),
-                      Row(
-                        children: [
-                          Text('data'),
-                          Text('data'),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Container(
-                                color: Colors.green,
-                                height: 50,
-                                width: 100,
-                              ),
-                              Container(
-                                color: Colors.green,
-                                height: 50,
-                                width: 100,
-                              ),
-                            ],
-                          ),
-                        ],
+                      Container(
+                        color: Colors.deepPurple,
+                        height: 150,
+                        width: 300,
+                        child: Column(
+                          children: [
+                            Text('data'),
+                            Text('data'),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Container(
+                                  color: Colors.greenAccent,
+                                  height: 50,
+                                  width: 50,
+                                ),
+                                SizedBox(width: 10),
+                                Container(
+                                  color: Colors.greenAccent,
+                                  height: 50,
+                                  width: 50,
+                                ),
+                                SizedBox(width: 10),
+                                Container(
+                                  color: Colors.greenAccent,
+                                  height: 50,
+                                  width: 50,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
