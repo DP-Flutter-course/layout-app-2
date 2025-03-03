@@ -123,29 +123,48 @@ class MyApp extends StatelessWidget {
                               Text(
                                 'Flutter is an OpenSource',
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 15,
                                   fontWeight: FontWeight.w800,
                                   color: Colors.white
                                 ),
                               ),
-                              Text('data'),
+                              Padding(
+                                padding: const EdgeInsets.all(5.0),
+                                child: Text(
+                                  'One of Flutters key advantages is its hot reload feature, which allows developers to see changes instantly without restarting the app.',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w800,
+                                    color: Colors.white
+                                  ),
+                                ),
+                              ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
-                                    color: Colors.greenAccent,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      color: Colors.greenAccent,
+                                    ),
                                     height: 50,
                                     width: 50,
                                   ),
                                   SizedBox(width: 10),
                                   Container(
-                                    color: Colors.greenAccent,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      color: Colors.greenAccent,
+                                    ),
                                     height: 50,
                                     width: 50,
                                   ),
                                   SizedBox(width: 10),
                                   Container(
-                                    color: Colors.greenAccent,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      color: Colors.greenAccent,
+                                    ),
                                     height: 50,
                                     width: 50,
                                   ),
