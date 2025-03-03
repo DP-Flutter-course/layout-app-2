@@ -48,7 +48,46 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
-            Container(color: Colors.amber, height: 100, width: double.infinity),
+            Container(
+              color: Colors.amber,
+              height: 100,
+              width: double.infinity,
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [Text('data'), Icon(Icons.bookmark)],
+                  ),
+                  Text('data'),
+                  Column(
+                    children: [
+                      Container(color: Colors.green, height: 50, width: 300),
+                      Row(
+                        children: [
+                          Text('data'),
+                          Text('data'),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                color: Colors.green,
+                                height: 50,
+                                width: 100,
+                              ),
+                              Container(
+                                color: Colors.green,
+                                height: 50,
+                                width: 100,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
