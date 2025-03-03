@@ -30,33 +30,49 @@ class MyApp extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Container(
-              color: Colors.lightGreenAccent,
-              height: 300,
-              width: double.infinity,
-              child: Column(
-                children: [
-                  Text(
-                    'Flutter is an OpenSource',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
-                  ),
-                  Text('data'),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        color: Colors.deepPurpleAccent,
-                        height: 50,
-                        width: 100,
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Container(
+                color: Colors.lightGreenAccent,
+                height: 300,
+                width: double.infinity,
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(10, 10, 10, 5),
+                      child: Text(
+                        'Flutter is an OpenSource',
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
                       ),
-                      Container(
-                        color: Colors.deepPurpleAccent,
-                        height: 50,
-                        width: 100,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text('Flutter is an open-source UI toolkit developed by Google for building natively compiled applications for mobile, web, and desktop from a single codebase. It uses the Dart programming language and offers a rich set of customizable widgets, enabling developers to create visually appealing and highly responsive applications.',
                       ),
-                    ],
-                  ),
-                ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Container(
+                            color: Colors.deepPurpleAccent,
+                            height: 70,
+                            width: 150,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Container(
+                            color: Colors.deepPurpleAccent,
+                            height: 70,
+                            width: 150,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
 
@@ -70,7 +86,12 @@ class MyApp extends StatelessWidget {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text('data'), Icon(Icons.bookmark)],
+                    children: [
+                      Text(
+                      'Flutter is an OpenSource',
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
+                    ),
+                      Icon(Icons.bookmark)],
                   ),
                   Text('data'),
                   Column(
