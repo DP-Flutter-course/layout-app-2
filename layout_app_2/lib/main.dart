@@ -164,6 +164,7 @@ class MyApp extends StatelessWidget {
                                     ),
                                     height: 50,
                                     width: 50,
+                                    child: Icon(Icons.settings, color: Colors.indigo,),
                                   ),
                                   SizedBox(width: 10),
                                   Container(
@@ -173,6 +174,7 @@ class MyApp extends StatelessWidget {
                                     ),
                                     height: 50,
                                     width: 50,
+                                    child: Icon(Icons.info, color: Colors.indigo,),
                                   ),
                                   SizedBox(width: 10),
                                   Container(
@@ -182,6 +184,7 @@ class MyApp extends StatelessWidget {
                                     ),
                                     height: 50,
                                     width: 50,
+                                    child: Icon(Icons.account_circle, color: Colors.indigo,),
                                   ),
                                 ],
                               ),
