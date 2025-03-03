@@ -42,12 +42,16 @@ class MyApp extends StatelessWidget {
                       padding: const EdgeInsets.fromLTRB(10, 10, 10, 5),
                       child: Text(
                         'Flutter is an OpenSource',
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                        ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text('Flutter is an open-source UI toolkit developed by Google for building natively compiled applications for mobile, web, and desktop from a single codebase. It uses the Dart programming language and offers a rich set of customizable widgets, enabling developers to create visually appealing and highly responsive applications.',
+                      child: Text(
+                        'Flutter is an open-source UI toolkit developed by Google for building natively compiled applications for mobile, web, and desktop from a single codebase. It uses the Dart programming language and offers a rich set of customizable widgets, enabling developers to create visually appealing and highly responsive applications.',
                       ),
                     ),
                     Row(
@@ -75,63 +79,85 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-
-            SizedBox(height: 10),
-
-            Container(
-              color: Colors.amber,
-              height: 300,
-              width: double.infinity,
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                      'Flutter is an OpenSource',
-                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
-                    ),
-                      Icon(Icons.bookmark)],
-                  ),
-                  Text('data'),
-                  Column(
-                    children: [
-                      Container(
-                        color: Colors.deepPurple,
-                        height: 150,
-                        width: 300,
-                        child: Column(
-                          children: [
-                            Text('data'),
-                            Text('data'),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  color: Colors.greenAccent,
-                                  height: 50,
-                                  width: 50,
-                                ),
-                                SizedBox(width: 10),
-                                Container(
-                                  color: Colors.greenAccent,
-                                  height: 50,
-                                  width: 50,
-                                ),
-                                SizedBox(width: 10),
-                                Container(
-                                  color: Colors.greenAccent,
-                                  height: 50,
-                                  width: 50,
-                                ),
-                              ],
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Container(
+                color: Colors.amber,
+                height: 350,
+                width: double.infinity,
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Text(
+                            'Flutter is an OpenSource',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w800,
                             ),
-                          ],
+                          ),
                         ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Icon(Icons.bookmark),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        'Flutter is an open-source UI toolkit developed by Google for building natively compiled applications for mobile, web, and desktop from a single codebase. It uses the Dart programming language and offers a rich set of customizable widgets, enabling developers to create visually appealing and highly responsive applications.',
                       ),
-                    ],
-                  ),
-                ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          color: Colors.deepPurple,
+                          height: 130,
+                          width: 350,
+                          child: Column(
+                            children: [
+                              Text(
+                                'Flutter is an OpenSource',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white
+                                ),
+                              ),
+                              Text('data'),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    color: Colors.greenAccent,
+                                    height: 50,
+                                    width: 50,
+                                  ),
+                                  SizedBox(width: 10),
+                                  Container(
+                                    color: Colors.greenAccent,
+                                    height: 50,
+                                    width: 50,
+                                  ),
+                                  SizedBox(width: 10),
+                                  Container(
+                                    color: Colors.greenAccent,
+                                    height: 50,
+                                    width: 50,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
