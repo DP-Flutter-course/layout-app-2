@@ -115,7 +115,10 @@ class MyApp extends StatelessWidget {
                     Column(
                       children: [
                         Container(
-                          color: Colors.deepPurple,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.deepPurple,
+                          ),
                           height: 130,
                           width: 350,
                           child: Column(
