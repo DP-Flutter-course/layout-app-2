@@ -33,7 +33,10 @@ class MyApp extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Container(
-                color: Colors.lightGreenAccent,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.lightGreenAccent,
+                ),
                 height: 300,
                 width: double.infinity,
                 child: Column(
@@ -60,7 +63,10 @@ class MyApp extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Container(
-                            color: Colors.deepPurpleAccent,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.deepPurpleAccent,
+                            ),
                             height: 70,
                             width: 150,
                           ),
@@ -68,7 +74,10 @@ class MyApp extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Container(
-                            color: Colors.deepPurpleAccent,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.deepPurpleAccent,
+                            ),
                             height: 70,
                             width: 150,
                           ),
@@ -82,7 +91,10 @@ class MyApp extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Container(
-                color: Colors.amber,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.amber,
+                ),
                 height: 350,
                 width: double.infinity,
                 child: Column(
@@ -128,7 +140,7 @@ class MyApp extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w800,
-                                  color: Colors.white
+                                  color: Colors.white,
                                 ),
                               ),
                               Padding(
@@ -138,7 +150,7 @@ class MyApp extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontWeight: FontWeight.w800,
-                                    color: Colors.white
+                                    color: Colors.white,
                                   ),
                                 ),
                               ),
