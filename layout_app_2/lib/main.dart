@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.menu, color: Colors.white, size: 30, ),
+          leading: Icon(Icons.menu, color: Colors.white, size: 30),
           title: Text(
             'Layout',
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900),
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           actions: [
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 0, 15, 0),
-              child: Icon(Icons.search, color: Colors.white, size: 30,),
+              child: Icon(Icons.search, color: Colors.white, size: 30),
             ),
           ],
           backgroundColor: Colors.blue,
@@ -29,7 +29,27 @@ class MyApp extends StatelessWidget {
 
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          
+          children: [
+            Container(
+              color: Colors.amber,
+              height: 100,
+              width: double.infinity,
+              child: Column(
+                children: [
+                  Text('data'),
+                  Text('data'),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(color: Colors.green, height: 50, width: 100),
+                      Container(color: Colors.green, height: 50, width: 100),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            Container(color: Colors.amber, height: 100, width: double.infinity),
+          ],
         ),
       ),
     );
