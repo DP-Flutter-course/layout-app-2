@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layout_app_2/widgets/container01.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -57,46 +58,8 @@ class Homepage extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(15.0),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: Colors.deepPurpleAccent,
-                              ),
-                              height: 70,
-                              width: 150,
-                              child: Center(
-                                child: Text(
-                                  'Hello Flutter',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(15.0),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: Colors.deepPurpleAccent,
-                              ),
-                              height: 70,
-                              width: 150,
-                              child: Center(
-                                child: Text(
-                                  'Hello Flutter',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
+                          Container01(title: 'Hello Flutter 01',),
+                          Container01(title: 'Hello Flutter 02',),
                         ],
                       ),
                     ],
