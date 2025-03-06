@@ -66,6 +66,15 @@ class Homepage extends StatelessWidget {
                               ),
                               height: 70,
                               width: 150,
+                              child: Center(
+                                child: Text(
+                                  'Hello Flutter',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
                           Padding(
@@ -77,6 +86,15 @@ class Homepage extends StatelessWidget {
                               ),
                               height: 70,
                               width: 150,
+                              child: Center(
+                                child: Text(
+                                  'Hello Flutter',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
                         ],
