@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:layout_app_2/widgets/container01.dart';
+import 'package:layout_app_2/widgets/icon_container.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -140,50 +141,20 @@ class Homepage extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(
-                                              50,
-                                            ),
-                                            color: Colors.greenAccent,
+                                        IconContainer(
+                                          iconName:Icons.settings,
+                                          colorName:Colors.greenAccent,
                                           ),
-                                          height: 50,
-                                          width: 50,
-                                          child: Icon(
-                                            Icons.settings,
-                                            color: Colors.indigo,
-                                          ),
-                                        ),
                                         SizedBox(width: 10),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(
-                                              50,
-                                            ),
-                                            color: Colors.greenAccent,
+                                        IconContainer(
+                                          iconName:Icons.info,
+                                          colorName:Colors.redAccent,
                                           ),
-                                          height: 50,
-                                          width: 50,
-                                          child: Icon(
-                                            Icons.info,
-                                            color: Colors.indigo,
-                                          ),
-                                        ),
                                         SizedBox(width: 10),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(
-                                              50,
-                                            ),
-                                            color: Colors.greenAccent,
+                                        IconContainer(
+                                          iconName:Icons.person,
+                                          colorName:Colors.yellowAccent,
                                           ),
-                                          height: 50,
-                                          width: 50,
-                                          child: Icon(
-                                            Icons.account_circle,
-                                            color: Colors.indigo,
-                                          ),
-                                        ),
                                       ],
                                     ),
                                   ),
